@@ -16,7 +16,7 @@ public class Projectile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speed = 1f;
+        speed = 3f;
     }
 
     // Update is called once per frame
