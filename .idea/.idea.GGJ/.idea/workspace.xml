@@ -8,7 +8,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Aetoile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ennemi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Game-jam/Assets/Scripts/Score.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Game-jam/Assets/Scripts/Timer.cs" root0="SKIP_HIGHLIGHTING" />
@@ -74,7 +73,7 @@
       <workItem from="1675454125968" duration="6750000" />
       <workItem from="1675499793843" duration="3535000" />
       <workItem from="1675506201113" duration="2885000" />
-      <workItem from="1675517804268" duration="1470000" />
+      <workItem from="1675517804268" duration="4875000" />
     </task>
     <servers />
   </component>

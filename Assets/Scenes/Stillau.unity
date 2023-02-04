@@ -1007,7 +1007,7 @@ MonoBehaviour:
   endReachedDistance: 0.2
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
-  whenCloseToDestination: 0
+  whenCloseToDestination: 1
   constrainInsideGraph: 0
 --- !u!114 &684398015
 MonoBehaviour:
@@ -1718,6 +1718,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1293338427 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7443071631624176984, guid: ef0e2c347f2f8ae4f8382c692293b3fd, type: 3}
+  m_PrefabInstance: {fileID: 1921704531}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1334647061
 GameObject:
   m_ObjectHideFlags: 0
@@ -2302,6 +2307,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1786472877 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1142645139931643551, guid: ef0e2c347f2f8ae4f8382c692293b3fd, type: 3}
+  m_PrefabInstance: {fileID: 1921704531}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1885701377
 GameObject:
   m_ObjectHideFlags: 0
@@ -2552,6 +2568,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6757753821375340213, guid: ef0e2c347f2f8ae4f8382c692293b3fd, type: 3}
+      propertyPath: pv
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757753821375340213, guid: ef0e2c347f2f8ae4f8382c692293b3fd, type: 3}
+      propertyPath: pvtext
+      value: 
+      objectReference: {fileID: 1786472877}
     - target: {fileID: 7443071631624176984, guid: ef0e2c347f2f8ae4f8382c692293b3fd, type: 3}
       propertyPath: m_Name
       value: Vie Canvas
@@ -2781,6 +2805,10 @@ PrefabInstance:
       propertyPath: pv
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: -4781049019510523701, guid: 1bc2b81a22736f24481dfc2668f9eb5f, type: 3}
+      propertyPath: hud
+      value: 
+      objectReference: {fileID: 1293338427}
     - target: {fileID: 2563156336620611263, guid: 1bc2b81a22736f24481dfc2668f9eb5f, type: 3}
       propertyPath: m_Name
       value: Ennemis 1
