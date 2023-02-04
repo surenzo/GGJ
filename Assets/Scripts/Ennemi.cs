@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ennemi : MonoBehaviour
 {
-    public int PV = 4;
+    public int pv = 4;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +18,8 @@ public class Ennemi : MonoBehaviour
     }
     public void TakeDamage(int damage)
     {
-        PV -= damage;
-        Debug.Log("degats infligé");
-        if (PV <= 0)
+        pv -= damage;
+        if (pv <= 0)
         {
             Destroy(gameObject);
         }

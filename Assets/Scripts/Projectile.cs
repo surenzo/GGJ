@@ -11,6 +11,7 @@ public class Projectile : MonoBehaviour
     public void Seek(GameObject cible, int dmg)
     {
         target = cible;
+        damage = dmg;
     }
     // Start is called before the first frame update
     void Start()
