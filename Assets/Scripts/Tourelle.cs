@@ -55,7 +55,8 @@ public class Tourelle : MonoBehaviour
 
     private void Shoot()
     {
-        GameObject projectileGenere = Instantiate(projectile);
+        Transform t = transform;
+        GameObject projectileGenere = Instantiate(projectile, t.position, t.rotation);
         projectileGenere.gameObject.GetComponent<Projectile>().Seek(target, damage);
     }
 }
