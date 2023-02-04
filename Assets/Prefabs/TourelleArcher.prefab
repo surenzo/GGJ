@@ -44,8 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 357b2c052003f4340bf036142f811db5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cd: 1
   range: 7
   damage: 1
   timeEllapsed: 5
   projectile: {fileID: 9044922307449492543, guid: 6db36c75371977b4bbd18f9f62765153, type: 3}
   target: {fileID: 0}
+  zone: 0

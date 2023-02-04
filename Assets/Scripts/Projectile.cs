@@ -42,13 +42,16 @@ public class Projectile : MonoBehaviour
                     if ((enemy.transform.position.x - transform.position.x) *
                         (enemy.transform.position.x - transform.position.x) +
                         (enemy.transform.position.y - transform.position.y) *
-                        (enemy.transform.position.y - transform.position.y) < 0.5)
+                        (enemy.transform.position.y - transform.position.y) < 2)
                     {
                         enemy.gameObject.GetComponent<Ennemi>().TakeDamage(damage);
                     }
                 }
             }
-            target.gameObject.GetComponent<Ennemi>().TakeDamage(damage);
+            else
+            {
+                target.gameObject.GetComponent<Ennemi>().TakeDamage(damage);
+            }
             Destroy(gameObject);
         }
         transform.Translate(direction.normalized*distFrame, Space.World);
