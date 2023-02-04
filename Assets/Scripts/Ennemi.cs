@@ -7,12 +7,14 @@ public class Ennemi : MonoBehaviour
 {
     public int pv = 4;
     private int damage = 1;
+    GameObject nearestTarget;
     [SerializeField] private GameObject hud;
 
     private Transform t;
     // Start is called before the first frame update
     void Start()
     {
+        nearestTarget = null;
         DetectTarget();
         InvokeRepeating("DetectTarget",1,0.5f);
     }
@@ -23,7 +25,7 @@ public class Ennemi : MonoBehaviour
 
         if ((t.position.x-transform.position.x)*(t.position.x-transform.position.x) + (t.position.y-transform.position.y)*(t.position.y-transform.position.y) <0.5)
         {
-            hud.gameObject.GetComponent<HUD>().TakeDamage(damage);
+            HUD.TakeDamage(damage);
             Destroy(gameObject);
         }
     }
@@ -39,7 +41,6 @@ public class Ennemi : MonoBehaviour
     void DetectTarget()
     {
         GameObject[] targets = GameObject.FindGameObjectsWithTag("deces");
-        GameObject nearestTarget = null;
         float nearestDist = Mathf.Infinity;
         foreach (GameObject target in targets)
         {

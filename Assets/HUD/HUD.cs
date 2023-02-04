@@ -5,7 +5,7 @@ using TMPro;
 
 public class HUD : MonoBehaviour
 {
-    public int pv;
+    public static int pv;
     public TextMeshProUGUI pvtext;
     // Start is called before the first frame update
     void Start()
@@ -18,7 +18,7 @@ public class HUD : MonoBehaviour
     { 
         pvtext.text= ": "+pv.ToString();
     }
-    public void TakeDamage(int damage){
+    public static void TakeDamage(int damage){
         pv-=damage;
         if (pv<=0){
             //GAME OVER
