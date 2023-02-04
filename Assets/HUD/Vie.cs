@@ -15,6 +15,6 @@ public class Vie : MonoBehaviour
     void Update()
     {
         transform.position=cam.ScreenToWorldPoint(new Vector3(35f,Screen.height-40f,0))+new Vector3(0f,0f,5f);
-        transform.localScale=cam.ScreenToWorldPoint(new Vector3(36f,36f,0f)) - cam.ScreenToWorldPoint(new Vector3(0f,0f,0f));
+        transform.localScale=cam.ScreenToWorldPoint(new Vector3(45f,45f,0f)) - cam.ScreenToWorldPoint(new Vector3(0f,0f,0f));
     }
 }
