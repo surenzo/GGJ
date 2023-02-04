@@ -18,4 +18,10 @@ public class Money : MonoBehaviour
     {
         money_text.text= ": "+money.ToString();
     }
+    public void spend(int price){
+        money-=price;
+    }
+    public void gain(int price){
+        money+=price;
+    }
 }

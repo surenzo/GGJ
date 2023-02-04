@@ -19,4 +19,7 @@ public class VagueHUD : MonoBehaviour
     {
         Vague_text.text= "Vague : "+ Vague.ToString()+ " / "+VagueMax.ToString();
     }
+    void new_wave(){
+        Vague++;
+    }
 }
