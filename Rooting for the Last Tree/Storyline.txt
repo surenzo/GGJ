@@ -1,0 +1,18 @@
+Dans un futur très lointain, la Terre, corrompue par l'avidité des hommes, dépérie de jours en jours....
+Le dernier espoir, la dernière lueur de vie, l'arbre légendaire Galad, fait face à des hordes de dévoreurs, qui attente à sa vie..
+C'est votre devoir, votre honneur, de sauver le monde et de protéger le Dernier Arbre....
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class MenuController : MonoBehaviour
+{
+    public void ChangeScene() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    
+    public void Quit() {
+        Application.Quit();
+    }
+}
