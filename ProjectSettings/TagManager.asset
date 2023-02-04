@@ -5,7 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - "D\xE9c\xE8s"
   - deces
+  - HUD
   layers:
   - Default
   - TransparentFX
@@ -14,7 +16,7 @@ TagManager:
   - Water
   - UI
   - obstacle
-  - player
+  - 
   - 
   - 
   - 
