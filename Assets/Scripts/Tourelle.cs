@@ -9,12 +9,14 @@ public class Tourelle : MonoBehaviour
     [SerializeField] private float range;
     [SerializeField] private int damage;
     [SerializeField] private float timeEllapsed ;
+    [SerializeField] private GameObject projectile;
+    [SerializeField] private GameObject target;
     // Start is called before the first frame update
     void Start()
     {
         cd = 5f;
         damage = 1;
-        timeEllapsed = 0;
+        timeEllapsed = cd;
         range = 5f;
     }
 
@@ -22,7 +24,10 @@ public class Tourelle : MonoBehaviour
     void Update()
     {
         timeEllapsed += Time.deltaTime;
-        Update_target();
+        if (timeEllapsed > cd)
+        {
+            Update_target();
+        }
     }
 
     private void Update_target()
@@ -40,10 +45,17 @@ public class Tourelle : MonoBehaviour
             }
         }
 
-        if (nearestEnemy != null && nearestDist < range && timeEllapsed > cd)
+        if (nearestEnemy != null && nearestDist < range)
         {
-            nearestEnemy.gameObject.GetComponent<Ennemi>().TakeDamage(damage);
+            target = nearestEnemy;
+            Shoot();
             timeEllapsed = 0;
         }
+    }
+
+    private void Shoot()
+    {
+        GameObject projectileGenere = Instantiate(projectile);
+        projectileGenere.gameObject.GetComponent<Projectile>().Seek(target, damage);
     }
 }
