@@ -4,19 +4,19 @@ using UnityEngine;
 using TMPro;
 
 public class HUD : MonoBehaviour
-{
+{   
     public int pv;
-    public TextMeshProUGUI pvtext;
+    public TextMeshProUGUI pv_text;
     // Start is called before the first frame update
     void Start()
     {
-        pv = 1;
+        
     }
 
     // Update is called once per frame
     void Update()
-    { 
-        pvtext.text= ": "+pv.ToString();
+    {
+        pv_text.text= ": "+pv.ToString();
     }
     public void TakeDamage(int damage){
         pv-=damage;

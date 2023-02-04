@@ -7,7 +7,7 @@ public class Ennemi : MonoBehaviour
 {
     public int pv = 4;
     private int damage = 1;
-    [SerializeField] private GameObject hud;
+    private GameObject hud;
 
     private Transform t;
     // Start is called before the first frame update
@@ -15,6 +15,7 @@ public class Ennemi : MonoBehaviour
     {
         DetectTarget();
         InvokeRepeating("DetectTarget",1,0.5f);
+        hud=GameObject.FindWithTag("HUD");
     }
 
     // Update is called once per frame
