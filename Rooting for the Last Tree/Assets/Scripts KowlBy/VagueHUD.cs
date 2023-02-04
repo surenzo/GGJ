@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class HUD : MonoBehaviour
-{   
-    public int PV;
-    public TextMeshProUGUI PV_text;
+public class VagueHUD : MonoBehaviour
+{
+    public int Vague;
+    public int VagueMax;
+    public TextMeshProUGUI Vague_text;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,13 +17,6 @@ public class HUD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PV_text.text= ": "+PV.ToString();
-    }
-    public void TakeDamage(int damage){
-        PV-=damage;
-        if (PV<=0){
-            //GAME OVER
-        }
+        Vague_text.text= "Vague : "+ Vague.ToString()+ " / "+VagueMax.ToString();
     }
 }
-
