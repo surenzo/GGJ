@@ -26,6 +26,7 @@ public class Ennemi : MonoBehaviour
         if ((t.position.x-transform.position.x)*(t.position.x-transform.position.x) + (t.position.y-transform.position.y)*(t.position.y-transform.position.y) <0.5)
         {
             HUD.TakeDamage(damage);
+            spawnEnnemis.number_ennemis--;
             Destroy(gameObject);
         }
     }
@@ -35,6 +36,7 @@ public class Ennemi : MonoBehaviour
         if (pv <= 0)
         {
             Destroy(gameObject);
+            spawnEnnemis.number_ennemis--;
         }
     }
 

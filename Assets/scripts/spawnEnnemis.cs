@@ -9,10 +9,10 @@ public class spawnEnnemis : MonoBehaviour
 
     [SerializeField] private List<GameObject> ennemis;
     
-    public int number_ennemis = 0;
+    public static int number_ennemis = 0;
     private int nombre_diff_ennemis;
     private int nombre_diff_parent;
-    bool rentrer = false;
+    static public bool Rentrer = false;
     
         
     // Start is called before the first frame update
@@ -24,11 +24,11 @@ public class spawnEnnemis : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!rentrer)
+        if (!Rentrer)
         {
             nombre_diff_ennemis = ennemis.Count;
             nombre_diff_parent = parent.Count;
-            rentrer = true;
+            Rentrer = true;
             StartCoroutine(spawn(2));
         }
     }
@@ -43,10 +43,9 @@ public class spawnEnnemis : MonoBehaviour
             GameObject cible = Instantiate(prefab, pere, false);
             cible.transform.position = pere.position;
             cible.SetActive(true);
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(sec);
         }
-        number_ennemis = 0;
-        rentrer = false;
+        
     }
 
 }

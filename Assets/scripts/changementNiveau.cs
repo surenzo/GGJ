@@ -6,7 +6,7 @@ using UnityEngine;
 public class changementNiveau : MonoBehaviour
 {
     [SerializeField] private List<GameObject> panneau_niveau;
-    public int niveau = 0;
+    [SerializeField] private int Niveau = 0;
 
     public spawnEnnemis ewi;
     // Start is called before the first frame update
@@ -18,17 +18,18 @@ public class changementNiveau : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ewi.number_ennemis == 0)
+        if (spawnEnnemis.number_ennemis == 0)
         {
             changer_corruption();
-            transform.GetComponent<changementNiveau>()
-            ewi.number_ennemis = 200;
+            spawnEnnemis.number_ennemis = 5;
+            Niveau += 1;
+            spawnEnnemis.Rentrer = false;
         }
     }
 
     void changer_corruption()
     {
-        panneau_niveau[niveau].SetActive(false);
+        panneau_niveau[Niveau].SetActive(false);
     }
     
 }
