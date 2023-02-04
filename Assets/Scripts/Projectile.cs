@@ -7,11 +7,13 @@ public class Projectile : MonoBehaviour
     [SerializeField] private GameObject target;
     [SerializeField] private float speed;
     [SerializeField] private int damage;
+    private bool zone;
 
-    public void Seek(GameObject cible, int dmg)
+    public void Seek(GameObject cible, int dmg, bool z)
     {
         target = cible;
         damage = dmg;
+        zone = z;
     }
     // Start is called before the first frame update
     void Start()
@@ -32,6 +34,20 @@ public class Projectile : MonoBehaviour
         float distFrame = speed * Time.deltaTime;
         if (direction.magnitude <= distFrame)
         {
+            if(zone)
+            {
+                GameObject[] ennemies = GameObject.FindGameObjectsWithTag("Enemy");
+                foreach (GameObject enemy in (ennemies))
+                {
+                    if ((enemy.transform.position.x - transform.position.x) *
+                        (enemy.transform.position.x - transform.position.x) +
+                        (enemy.transform.position.y - transform.position.y) *
+                        (enemy.transform.position.y - transform.position.y) < 0.5)
+                    {
+                        enemy.gameObject.GetComponent<Ennemi>().TakeDamage(damage);
+                    }
+                }
+            }
             target.gameObject.GetComponent<Ennemi>().TakeDamage(damage);
             Destroy(gameObject);
         }

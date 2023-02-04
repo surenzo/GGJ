@@ -5,19 +5,18 @@ using UnityEngine;
 
 public class Tourelle : MonoBehaviour
 {
-    [SerializeField] private float cd;
-    [SerializeField] private float range;
-    [SerializeField] private int damage;
-    [SerializeField] private float timeEllapsed ;
+    [SerializeField] private float cd = 5f;
+    [SerializeField] private float range = 7f;
+    [SerializeField] private int damage = 1;
+    [SerializeField] private float timeEllapsed;
     [SerializeField] private GameObject projectile;
     [SerializeField] private GameObject target;
+
+    [SerializeField] private bool zone;
     // Start is called before the first frame update
     void Start()
     {
-        cd = 5f;
-        damage = 1;
         timeEllapsed = cd;
-        range = 5f;
     }
 
     // Update is called once per frame
@@ -57,6 +56,6 @@ public class Tourelle : MonoBehaviour
     {
         Transform t = transform;
         GameObject projectileGenere = Instantiate(projectile, t.position, t.rotation);
-        projectileGenere.gameObject.GetComponent<Projectile>().Seek(target, damage);
+        projectileGenere.gameObject.GetComponent<Projectile>().Seek(target, damage, zone);
     }
 }
