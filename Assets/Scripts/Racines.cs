@@ -10,7 +10,7 @@ public class Racines : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        child.SetActive(false);
     }
 
     // Update is called once per frame
