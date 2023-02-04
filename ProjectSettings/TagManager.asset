@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - ennemis
+  - checkpoint
   layers:
   - Default
   - TransparentFX

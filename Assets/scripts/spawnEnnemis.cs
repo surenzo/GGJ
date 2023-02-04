@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
+
 public class spawnEnnemis : MonoBehaviour
 {
     [SerializeField] private List<Transform> parent;
@@ -8,15 +10,15 @@ public class spawnEnnemis : MonoBehaviour
     [SerializeField] private List<GameObject> ennemis;
     
     public int number_ennemis = 0;
-    public int niveau = 0;
-    [SerializeField] private int nombre_diff_ennemis = 4;
-    [SerializeField] private int nombre_diff_parent = 3;
+    private int nombre_diff_ennemis;
+    private int nombre_diff_parent;
     bool rentrer = false;
     
         
     // Start is called before the first frame update
     void Start()
     {
+        
     }
 
     // Update is called once per frame
@@ -24,6 +26,8 @@ public class spawnEnnemis : MonoBehaviour
     {
         if (!rentrer)
         {
+            nombre_diff_ennemis = ennemis.Count;
+            nombre_diff_parent = parent.Count;
             rentrer = true;
             StartCoroutine(spawn(2));
         }
