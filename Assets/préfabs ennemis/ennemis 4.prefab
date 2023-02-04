@@ -100,7 +100,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fbf3b31953e5554598463c8d38e7b44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pv: 4
+  pv: 2
+  damage: 4
+  speed: 1
   hud: {fileID: 0}
 --- !u!114 &-9100852684284922539
 MonoBehaviour:
@@ -146,7 +148,7 @@ MonoBehaviour:
   radius: 0.5
   height: 2
   canMove: 1
-  maxSpeed: 1
+  maxSpeed: 4
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2

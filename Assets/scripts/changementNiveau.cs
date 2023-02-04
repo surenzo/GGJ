@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-    
+using UnityEngine.UIElements;
+
 
 public class changementNiveau : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class changementNiveau : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        VagueHUD.VagueMax = panneau_niveau.Count;
     }
 
     // Update is called once per frame
@@ -28,7 +29,10 @@ public class changementNiveau : MonoBehaviour
 
     void changer_corruption()
     {
-        panneau_niveau[VagueHUD.Vague].SetActive(false);
+        if (VagueHUD.Vague < VagueHUD.VagueMax)
+        {
+            panneau_niveau[VagueHUD.Vague-1].SetActive(false);
+        }
     }
     
 }

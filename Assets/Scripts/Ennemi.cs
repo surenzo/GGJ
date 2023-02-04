@@ -6,7 +6,7 @@ using UnityEngine;
 public class Ennemi : MonoBehaviour
 {
     public int pv = 4;
-    private int damage = 1;
+    [SerializeField] private int damage = 1;
     GameObject nearestTarget;
     [SerializeField] private GameObject hud;
 
@@ -17,6 +17,7 @@ public class Ennemi : MonoBehaviour
         nearestTarget = null;
         DetectTarget();
         InvokeRepeating("DetectTarget",1,0.5f);
+        
     }
 
     // Update is called once per frame

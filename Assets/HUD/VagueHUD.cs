@@ -6,12 +6,12 @@ using TMPro;
 public class VagueHUD : MonoBehaviour
 {
     public static int Vague;
-    public int VagueMax;
+    public static int VagueMax;
     public TextMeshProUGUI Vague_text;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Vague = 1;
     }
 
     // Update is called once per frame

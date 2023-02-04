@@ -13,12 +13,13 @@ public class spawnEnnemis : MonoBehaviour
     private int nombre_diff_ennemis;
     private int nombre_diff_parent;
     static public bool Rentrer = false;
-    
+    private int ennemi_max;
         
     // Start is called before the first frame update
     void Start()
     {
-        
+        ennemi_max = 5;
+        number_ennemis = 1;
     }
 
     // Update is called once per frame
@@ -29,23 +30,22 @@ public class spawnEnnemis : MonoBehaviour
             nombre_diff_ennemis = ennemis.Count;
             nombre_diff_parent = parent.Count;
             Rentrer = true;
-            StartCoroutine(spawn(2));
+            StartCoroutine(spawn(1f));
         }
     }
     
-    IEnumerator spawn(int sec)
+    IEnumerator spawn(float sec)
     {
-        for (int i = 0; i < number_ennemis; i++)
+        for (number_ennemis= 1; number_ennemis < 1+ ennemi_max; number_ennemis++)
         {
             GameObject prefab = ennemis[Random.Range(0, nombre_diff_ennemis)];
             Transform pere = parent[Random.Range(0, nombre_diff_parent)];
-            //a changé pour chaque niveau ???
             GameObject cible = Instantiate(prefab, pere, false);
             cible.transform.position = pere.position;
             cible.SetActive(true);
             yield return new WaitForSeconds(sec);
         }
-        
+        number_ennemis -= 1;
     }
 
 }
