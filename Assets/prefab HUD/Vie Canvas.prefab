@@ -388,8 +388,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dd0865ddb1811547b9d0a6ffc48325b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PV: 20
-  PV_text: {fileID: 1142645139931643551}
+  transition: {fileID: 0}
+  transitionTime: 0
+  SceneIndex: 0
+  pvtext: {fileID: 0}
+  sound: {fileID: 8300000, guid: 901f71470de3f414e9075e18d851a955, type: 3}
+  volume: 0
 --- !u!114 &2317179627858981826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,7 +406,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01c7e740ccce9504ab7d5bb57e4f624a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 150
   money_text: {fileID: 3407257606555534337}
 --- !u!114 &6192483880089259911
 MonoBehaviour:
@@ -416,8 +419,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b04e40b031db6641a69c575704cd09b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Vague: 0
-  VagueMax: 20
   Vague_text: {fileID: 5167630223976108914}
 --- !u!1 &9123619872983171709
 GameObject:

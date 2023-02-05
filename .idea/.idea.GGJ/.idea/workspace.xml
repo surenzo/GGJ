@@ -2,9 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c38ae86-81fd-40ea-8ada-0550ecf341fa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Son.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Son.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sons.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sons/Banger fantaisie.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sons/Banger fantaisie.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sons/Banger.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sons/Banger.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sons/Canon.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sons/Canon.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sons/Fireball1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sons/Fireball1.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sons/Scie.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sons/Scie.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sons/arc.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sons/arc.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sons/video-game-hit-noise-001-135821.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sons/video-game-hit-noise-001-135821.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Banger fantaisie.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Banger.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprites/arbre.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/préfabs ennemis/ennemis 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/préfabs ennemis/ennemis 2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs Tours/TourelleArcher.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs Tours/TourelleArcher.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs Tours/TourelleMage.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs Tours/TourelleMage.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs Tours/TourelleZone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs Tours/TourelleZone.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs Tours/invocation.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs Tours/invocation.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene_KowlBy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_KowlBy.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stillau.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stillau.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tourelle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tourelle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/ENDOR___ SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/ENDOR___ SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/IMMORTAL SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/IMMORTAL SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefab HUD/ENDOR___ SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefab HUD/ENDOR___ SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefab HUD/Vie Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefab HUD/Vie Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefab menu vente/TourAPoser 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefab menu vente/TourAPoser 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefab menu vente/TourAPoser 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefab menu vente/TourAPoser 2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefab menu vente/TourAPoser 3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefab menu vente/TourAPoser 3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/script HUD/HUD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/script HUD/HUD.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scripts Placement Tour/PlacerTour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts Placement Tour/PlacerTour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scripts Placement Tour/PlacerTour.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts Placement Tour/PlacerTour.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +52,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/prefab menu vente/Amelioration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/prefab menu vente/BoostSpeed.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scripts Placement Tour/TourRandom.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scripts/Ennemi.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/Ver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scripts/changementNiveau.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -77,7 +117,8 @@
       <workItem from="1675499793843" duration="3535000" />
       <workItem from="1675506201113" duration="2885000" />
       <workItem from="1675517804268" duration="16509000" />
-      <workItem from="1675556443426" duration="27321000" />
+      <workItem from="1675556443426" duration="18514000" />
+      <workItem from="1675587470012" duration="7676000" />
     </task>
     <servers />
   </component>

@@ -55,6 +55,11 @@ MonoBehaviour:
   timeEllapsed: 1
   projectile: {fileID: 2119001409049444138, guid: 5307b6fec04a76e49a73fcb553716773, type: 3}
   target: {fileID: 0}
+  sound: {fileID: 8300000, guid: 51035928419916944bfe03a8319807b5, type: 3}
+  volume: 0
+  targetC: {fileID: 0}
+  soundC: {fileID: 8300000, guid: 85d43f8ee3c53d24780b390e04c27cf2, type: 3}
+  volumeC: 0
   zone: 1
 --- !u!1 &1412719497024849150
 GameObject:

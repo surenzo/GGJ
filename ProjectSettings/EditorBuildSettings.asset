@@ -12,12 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Storyline.unity
     guid: 00ee0d1d7ed575b4b8e252f5fd58e498
   - enabled: 1
-    path: Assets/Scenes/Stillau.unity
-    guid: 1a28547fd4ec15a44b30c8245027246c
+    path: Assets/Scenes/Scene_KowlBy.unity
+    guid: 7e76d75bb6540e342876645943e0e270
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: ae4965847c06bb84f88fb186bf36738a
   - enabled: 1
-    path: Assets/Scenes/FIN GG.unity
-    guid: eed2cac4e8342f94c8d67f73900c71e8
+    path: Assets/Scenes/YouWin(GG).unity
+    guid: e52933c7fd102f44986d5b7a8f5a7f96
   m_configObjects: {}

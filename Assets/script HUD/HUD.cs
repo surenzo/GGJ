@@ -12,10 +12,18 @@ public class HUD : MonoBehaviour
     public int SceneIndex;
     public static int pv;
     public TextMeshProUGUI pvtext;
+    [SerializeField] private AudioClip sound;
+    [SerializeField] private float volume;
+    private AudioSource source;
     // Start is called before the first frame update
     void Start()
     {
         pv = 20;
+        gameObject.AddComponent<AudioSource>();
+        source = GetComponent<AudioSource>();
+        volume = 50f;
+        source.clip = sound;
+        source.volume = volume;
     }
 
     // Update is called once per frame
@@ -28,6 +36,7 @@ public class HUD : MonoBehaviour
         if (pv<=0)
         {
             StartCoroutine(LoadStoryline(SceneIndex));
+            source.Play();
         }
     }
 

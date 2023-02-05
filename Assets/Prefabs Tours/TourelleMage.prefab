@@ -51,6 +51,8 @@ MonoBehaviour:
   timeEllapsed: 1
   projectile: {fileID: 9044922307449492543, guid: 50a1694b90425ea46a0113ba56fe65b8, type: 3}
   target: {fileID: 0}
+  sound: {fileID: 8300000, guid: 51035928419916944bfe03a8319807b5, type: 3}
+  volume: 0
   zone: 0
 --- !u!212 &5734520783664760994
 SpriteRenderer:
