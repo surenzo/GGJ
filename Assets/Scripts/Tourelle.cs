@@ -11,12 +11,19 @@ public class Tourelle : MonoBehaviour
     [SerializeField] private float timeEllapsed;
     [SerializeField] private GameObject projectile;
     [SerializeField] private GameObject target;
-
+    [SerializeField] private AudioClip sound;
+    [SerializeField] private float volume;
+    private AudioSource source;
     [SerializeField] private bool zone;
     // Start is called before the first frame update
     void Start()
     {
         timeEllapsed = cd;
+        gameObject.AddComponent<AudioSource>();
+        source = GetComponent<AudioSource>();
+        volume = 50f;
+        source.clip = sound;
+        source.volume = volume;
     }
 
     // Update is called once per frame
@@ -57,5 +64,6 @@ public class Tourelle : MonoBehaviour
         Transform t = transform;
         GameObject projectileGenere = Instantiate(projectile, t.position, t.rotation);
         projectileGenere.gameObject.GetComponent<Projectile>().Seek(target, damage, zone);
+        source.Play();
     }
 }

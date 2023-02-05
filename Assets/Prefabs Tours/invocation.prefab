@@ -197,6 +197,8 @@ MonoBehaviour:
   - {fileID: 1412719496490646198, guid: 6b04fd3d5d64a0e41bc48a704694f7e6, type: 3}
   random: {fileID: 0}
   thune_de_la_tour: b4000000b4000000b4000000
+  sound: {fileID: 8300000, guid: 85d43f8ee3c53d24780b390e04c27cf2, type: 3}
+  volume: 0
 --- !u!4 &5450778908677441017 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3990558884808564471, guid: 293fec234192da1439c130bee7596ccc, type: 3}
