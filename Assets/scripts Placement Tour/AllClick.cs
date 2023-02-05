@@ -23,7 +23,6 @@ public class AllClick : MonoBehaviour
     }
     public void SpawnTurretMenu()
     {
-        Debug.Log(TourMenu.activeSelf);
         if(!TourMenu.activeSelf)
         TourMenu.SetActive(true);
         else

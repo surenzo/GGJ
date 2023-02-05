@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Ennemi : MonoBehaviour
 {
-    [SerializeField] private Money thune;
     public int money_du_mob = 500;
     public int pv = 4;
     [SerializeField] private int damage = 1;
@@ -17,8 +16,6 @@ public class Ennemi : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        thune=transform.parent.transform.parent.transform.Find("Vie Canvas").gameObject
-            .GetComponent<Money>();
         hud = transform.parent.transform.parent.transform.Find("Vie Canvas").gameObject
             .GetComponent<HUD>();
         nearestTarget = null;
@@ -43,7 +40,7 @@ public class Ennemi : MonoBehaviour
         pv -= dmg;
         if (pv <= 0)
         {
-            thune.gain(money_du_mob);
+            Money.gain(money_du_mob);
             Destroy(gameObject);
             spawnEnnemis.number_ennemis--;
         }

@@ -20,6 +20,8 @@ public class changementNiveau : MonoBehaviour
     
     [SerializeField] private List<GameObject> panneau_niveau;
 
+    private bool finito;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,11 +32,11 @@ public class changementNiveau : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R) && spawnEnnemis.number_ennemis == 0)
+        if (Input.GetKeyDown(KeyCode.R) && spawnEnnemis.number_ennemis == 0 && finito)
         {
+            finito = false;
             changer_corruption();
             VagueHUD.Vague += 1;
-            spawnEnnemis.number_ennemis += 5;
             StartCoroutine(CountdownToStart());
         }
     }
@@ -65,7 +67,9 @@ public class changementNiveau : MonoBehaviour
         yield return new WaitForSeconds(1f);
         countdowndisplay.gameObject.SetActive(false);
         vsuivante.gameObject.SetActive(false);
+        spawnEnnemis.number_ennemis = 0;
         spawnEnnemis.Rentrer = false;
+        finito = true;
     }
     
     IEnumerator LoadStoryline(int LevelIndex) {

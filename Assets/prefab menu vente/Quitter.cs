@@ -8,8 +8,8 @@ public class Quitter : MonoBehaviour
 
     void OnMouseDown()
     {
-        this.gameObject.SetActive(false);
+        transform.parent.gameObject.SetActive(false);
         boutton.SetActive(false);
-        transform.parent.transform.Find("Square").GetComponent<BoxCollider2D>().enabled =true;
+        transform.parent.transform.parent.transform.Find("Square").GetComponent<BoxCollider2D>().enabled =true;
     }
 }

@@ -5,7 +5,7 @@ using TMPro;
 
 public class Money : MonoBehaviour
 {
-    public int money;
+    public static int money=500;
     public TextMeshProUGUI money_text;
     // Start is called before the first frame update
     void Start()
@@ -18,10 +18,10 @@ public class Money : MonoBehaviour
     {
         money_text.text= ": "+money.ToString();
     }
-    public void spend(int price){
+    public static void spend(int price){
         money-=price;
     }
-    public void gain(int price){
+    public static void gain(int price){
         money+=price;
     }
 }
