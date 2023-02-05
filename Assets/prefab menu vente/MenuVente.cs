@@ -9,7 +9,7 @@ public class MenuVente : MonoBehaviour
     void OnMouseDown()
     {
         this.GetComponent<BoxCollider2D>().enabled =false;
-        boutton.SetActive(false);
-        quitter.SetActive(false);
+        boutton.SetActive(true);
+        quitter.SetActive(true);
     }   
 }

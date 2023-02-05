@@ -26,9 +26,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036798855677097760}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.65164196, y: -2.4664803, z: 0.09731957}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -74,9 +74,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 32767
+  m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -99,11 +99,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moi: {fileID: 1036798855677097760}
-  parent: {fileID: 0}
   Tourelles:
-  - {fileID: 1412719496490646198, guid: 39373a27f7154b44285d645dbc8af154, type: 3}
-  - {fileID: 1412719496490646198, guid: 39373a27f7154b44285d645dbc8af154, type: 3}
-  - {fileID: 1412719496490646198, guid: 39373a27f7154b44285d645dbc8af154, type: 3}
+  - {fileID: 1412719496490646198, guid: 74a7f991177d20440a5fb8858582045e, type: 3}
+  - {fileID: 1412719496490646198, guid: 7fe910000fe8b3847a9ab5604a60edde, type: 3}
+  - {fileID: 1412719496490646198, guid: 6b04fd3d5d64a0e41bc48a704694f7e6, type: 3}
   random: {fileID: 0}
 --- !u!61 &1036798855677097772
 BoxCollider2D:

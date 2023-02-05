@@ -9,10 +9,10 @@ public class spawnEnnemis : MonoBehaviour
 
     [SerializeField] private List<GameObject> ennemis;
     
-    public static int number_ennemis = 0;
+    public static int number_ennemis ;
     private int nombre_diff_ennemis;
     private int nombre_diff_parent;
-    static public bool Rentrer = false;
+    static public bool Rentrer=true;
     private int ennemi_max;
         
     // Start is called before the first frame update
