@@ -5,7 +5,9 @@ using UnityEngine;
 public class PlacerTour : MonoBehaviour
 {
     public List<GameObject> Tourelles;
+    
     [SerializeField] AllClick random;
+
     public List<int> thune_de_la_tour ;
 
 void Start(){
