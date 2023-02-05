@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5933315696502769395}
   - component: {fileID: -3453575274852611650}
   - component: {fileID: 6241656065614965429}
+  - component: {fileID: -6182589706177338264}
   m_Layer: 0
   m_Name: Ennemis 1
   m_TagString: Enemy
@@ -210,3 +211,19 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 891e16f2cc1c78547891ac01c4bcd291, type: 3}
   - {fileID: 21300000, guid: 21b86227ca8d83a4ca7fad54455f09b6, type: 3}
   - {fileID: 21300000, guid: da90d1b5f950ae941afb4eed93e78a8b, type: 3}
+--- !u!70 &-6182589706177338264
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2563156336620611263}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.030841231, y: 0}
+  m_Size: {x: 6.286539, y: 10.700001}
+  m_Direction: 0
