@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   money_du_mob: 500
-  pv: 4
+  pv: 40
   damage: 1
   hud: {fileID: 0}
 --- !u!70 &-7097395107189397550
@@ -506,7 +506,7 @@ GameObject:
   - component: {fileID: 5380474554017054122}
   m_Layer: 0
   m_Name: Ver tete
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

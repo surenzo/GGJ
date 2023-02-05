@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   money_du_mob: 500
-  pv: 4
+  pv: 20
   damage: 1
   hud: {fileID: 0}
 --- !u!114 &1725392682096686733
