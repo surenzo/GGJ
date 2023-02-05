@@ -10,6 +10,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ennemi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/changementNiveau.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scripts Placement Tour/TourRandom.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Game-jam/Assets/Script/Texte.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Unijam2/Assets2/Assets/Script/AgroMob.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -74,7 +75,7 @@
       <workItem from="1675506201113" duration="2885000" />
       <workItem from="1675517804268" duration="16509000" />
       <workItem from="1675556443426" duration="18514000" />
-      <workItem from="1675587470012" duration="1875000" />
+      <workItem from="1675587470012" duration="3017000" />
     </task>
     <servers />
   </component>
