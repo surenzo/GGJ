@@ -9,6 +9,8 @@ TagManager:
   - deces
   - HUD
   - tour
+  - BouttonTag
+  - tourellefonctionne
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,6 @@ TagManager:
   - Water
   - UI
   - obstacle
-  - 
   - 
   - 
   - 

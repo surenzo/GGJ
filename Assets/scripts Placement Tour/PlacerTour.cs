@@ -5,8 +5,14 @@ using UnityEngine;
 public class PlacerTour : MonoBehaviour
 {
     public List<GameObject> Tourelles;
-    public AllClick random;
+    private AllClick random;
     public List<int> thune_de_la_tour ;
+
+void Start(){
+    GameObject objet = GameObject.FindGameObjectWithTag("tourellefonctionne");
+    random = objet.GetComponent<AllClick>();
+}
+
 void OnMouseDown()
     {
         for(int i =0; i< Tourelles.Count; i++){
