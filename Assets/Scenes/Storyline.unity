@@ -295,7 +295,7 @@ MonoBehaviour:
   delay: 0.07
   wait: 1
   alltext: "Dans un futur tr\xE8s lointain, la Terre, corrompue par l'avidit\xE9
-    des hommes, d\xE9p\xE9rie de jours en jours...."
+    des hommes, d\xE9p\xE9rit de jours en jours...."
 --- !u!1 &552185916
 GameObject:
   m_ObjectHideFlags: 0
