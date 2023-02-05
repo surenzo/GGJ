@@ -8,6 +8,7 @@ TagManager:
   - "D\xE9c\xE8s"
   - deces
   - HUD
+  - tour
   layers:
   - Default
   - TransparentFX
@@ -16,6 +17,7 @@ TagManager:
   - Water
   - UI
   - obstacle
+  - 
   - 
   - 
   - 
