@@ -177,10 +177,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 526860909024624372}
-  - component: {fileID: 3977319870069712801}
   - component: {fileID: -3811900847441793542}
   - component: {fileID: -4552022018024829066}
   - component: {fileID: -2179020467485102683}
+  - component: {fileID: 1149031725677035295}
   m_Layer: 0
   m_Name: ennemis 2
   m_TagString: Enemy
@@ -209,22 +209,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3977319870069712801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4466389145408260908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fbf3b31953e5554598463c8d38e7b44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  money_du_mob: 500
-  pv: 5
-  damage: 1
-  hud: {fileID: 0}
 --- !u!114 &-3811900847441793542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,6 +293,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
+--- !u!114 &1149031725677035295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4466389145408260908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fbf3b31953e5554598463c8d38e7b44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money_du_mob: 500
+  pv: 4
+  damage: 1
+  hud: {fileID: 0}
 --- !u!1 &5741774349351604136
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,7 +487,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5821874625453672464}
   - component: {fileID: 5380474554017054122}
-  - component: {fileID: 5931044131320232354}
   m_Layer: 0
   m_Name: Ver tete
   m_TagString: Untagged
@@ -562,22 +561,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5931044131320232354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8025024298354475295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fbf3b31953e5554598463c8d38e7b44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  money_du_mob: 500
-  pv: 4
-  damage: 1
-  hud: {fileID: 0}
 --- !u!1 &8878578778912133689
 GameObject:
   m_ObjectHideFlags: 0
